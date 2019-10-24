@@ -1,0 +1,113 @@
+$hamburger-distance:12px;
+
+@mixin hamburger-line {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+
+    &__img {
+        margin: 20px 20px;
+        align-self: flex-start;
+
+    }
+
+    // &__navigation {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}
+
+.navigation__list {
+    display: none;
+    // display: flex;
+
+
+    &-item {
+        list-style: none;
+        text-align: center;
+        margin: 10px;
+    }
+
+    &-anchor {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+}
+
+.navigation__list--active {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    cursor: pointer;
+    padding: 5px;
+
+    &-box {
+        width: 40px;
+        height: 40px;
+
+        display: inline-block;
+        position: relative;
+
+        &-inner {
+            @include hamburger-line;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color .2s .1s ease-in-out;
+        }
+
+        .hamburger--active &-inner {
+            background-color: transparent;
+        }
+
+        &-inner::before,
+        &-inner::after {
+            @include hamburger-line;
+            content: "";
+            left: 0;
+            transition: transform .2s .2s ease-in-out;
+        }
+
+        &-inner::before {
+            top: $hamburger-distance;
+        }
+
+        .hamburger--active &-inner::before {
+            transform: translateY(-$hamburger-distance) rotate(-45deg);
+        }
+
+        &-inner::after {
+            top: -$hamburger-distance;
+        }
+
+        .hamburger--active &-inner::after {
+            transform: translateY($hamburger-distance) rotate(45deg);
+        }
+
+    }
+}
