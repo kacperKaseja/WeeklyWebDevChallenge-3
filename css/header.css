@@ -56,8 +56,9 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 25px;
-  right: 40px;
+  top: 0;
+  right: 0;
+  margin: 10px 20px;
   cursor: pointer;
   padding: 5px;
 }
