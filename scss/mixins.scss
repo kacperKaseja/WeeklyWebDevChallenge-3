@@ -1,0 +1,23 @@
+@mixin grennBtn {
+    font-size: 20px;
+    border: none;
+    background-color: $green;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+@mixin headings2 {
+    font-size: $fontSizeH2;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+@mixin container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}

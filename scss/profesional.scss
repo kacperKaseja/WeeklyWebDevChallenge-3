@@ -1,0 +1,9 @@
+.professional {
+    @include container;
+    text-align: center;
+
+    &__h2 {
+        @include headings2;
+    }
+
+}
