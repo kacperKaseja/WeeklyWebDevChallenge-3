@@ -200,4 +200,9 @@
   font-size: 20px;
   margin: 10px 0;
 }
+
+.relax__gear {
+  display: none;
+  background-color: gray;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,YAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "../scss/relax.scss"
+    ],
+    "names": [],
+    "file": "relax.css"
+}
