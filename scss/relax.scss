@@ -10,10 +10,40 @@
         display: none;
         background-color: gray;
     }
+
+
 }
 
 .just-relax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     &__h2 {
-        @include headings2
+        @include headings2;
+
+
+    }
+
+    &__span {
+        color: $green;
+    }
+
+    &__paragraf {
+        margin: 20px 0;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    &__button {
+        @include grennBtn;
     }
 }
