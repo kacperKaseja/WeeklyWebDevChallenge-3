@@ -1,0 +1,16 @@
+.project {
+    @include container;
+
+
+    &__h2 {
+        @include headings2;
+
+    }
+
+    &__paragrap {
+
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {}
+}
