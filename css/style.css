@@ -275,11 +275,37 @@
   font-size: 30px;
   text-transform: uppercase;
   margin: 20px 0;
-  text-align: center;
 }
 
 .project__paragrap {
-  text-align: center;
   margin-bottom: 30px;
+}
+
+.wrapper__h3 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.wrapper__paragrap {
+  margin: 10px 0;
+}
+
+.wrapper__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.wrapper__paragrap--inner {
+  margin: 10px;
+  line-height: 20px;
+}
+
+.wrapper__paragrap--inner span {
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,29 @@
 
         margin-bottom: 30px;
     }
+}
 
-    &__wrapper {}
+.wrapper__h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.wrapper__paragrap {
+    margin: 10px 0;
+}
+
+.wrapper__div {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.wrapper__paragrap--inner {
+    margin: 10px;
+    line-height: 20px;
+}
+
+.wrapper__paragrap--inner span {
+
+    font-weight: bolder;
 }
