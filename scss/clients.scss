@@ -1,0 +1,57 @@
+.clients {
+    @include container;
+    text-align: center;
+
+    &__h2 {
+        @include headings2;
+    }
+
+    &__paragrap {
+        color: gray;
+        margin: 20px 0;
+    }
+
+
+    &__image-container {
+        width: 200px;
+        height: 200px;
+        background-image: url('/img/rydzyk.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        background-position: center;
+        margin: 10px auto;
+    }
+
+    &__image-container--2 {
+        background-image: url('/img/2pac.png');
+
+    }
+
+}
+
+.container__wrapper {
+    background-color: rgb(230, 230, 230);
+    padding: 20px 10px;
+    border-radius: 5px;
+    position: relative;
+    margin: 25px 0;
+}
+
+.container__wrapper::after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgb(230, 230, 230);
+
+}
+
+.container__span {
+    display: block;
+    margin: 10px 0;
+    color: $green;
+}

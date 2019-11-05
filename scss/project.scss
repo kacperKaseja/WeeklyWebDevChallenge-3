@@ -8,7 +8,7 @@
     }
 
     &__paragrap {
-
+        color: gray;
         margin-bottom: 30px;
     }
 }
@@ -20,6 +20,7 @@
 
 .wrapper__paragrap {
     margin: 10px 0;
+    color: gray;
 }
 
 .wrapper__div {
@@ -31,9 +32,11 @@
 .wrapper__paragrap--inner {
     margin: 10px;
     line-height: 20px;
+    color: gray;
 }
 
 .wrapper__paragrap--inner span {
+    color: black;
     font-weight: bolder;
 }
 
@@ -44,4 +47,8 @@
     text-transform: uppercase;
     color: $green;
     font-weight: 900;
+}
+
+.project__wrapper-paragrap {
+    color: gray;
 }
