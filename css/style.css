@@ -409,7 +409,7 @@
 }
 
 .container__wrapper {
-  background-color: #e6e6e6;
+  background-color: #f0f0f0;
   padding: 20px 10px;
   border-radius: 5px;
   position: relative;
@@ -425,7 +425,7 @@
           transform: translateX(-50%);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 20px solid #e6e6e6;
+  border-bottom: 20px solid #f0f0f0;
 }
 
 .container__span {
