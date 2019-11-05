@@ -34,6 +34,14 @@
 }
 
 .wrapper__paragrap--inner span {
-
     font-weight: bolder;
+}
+
+.project__wrapper-link {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $green;
+    font-weight: 900;
 }
