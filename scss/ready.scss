@@ -1,0 +1,20 @@
+.ready {
+    text-align: center;
+    @include container;
+    background-color: $green;
+
+    &__h2 {
+        @include headings2;
+        color: white;
+    }
+
+    &__btn {
+        color: white;
+        background-color: transparent;
+        padding: 10px 30px;
+        font-size: 20px;
+        text-transform: uppercase;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+}

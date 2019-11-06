@@ -396,7 +396,7 @@
 .clients__image-container {
   width: 200px;
   height: 200px;
-  background-image: url("/img/rydzyk.jpg");
+  background-image: url("../img/rydzyk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -405,7 +405,7 @@
 }
 
 .clients__image-container--2 {
-  background-image: url("/img/2pac.png");
+  background-image: url("../img/2pac.png");
 }
 
 .container__wrapper {
@@ -432,5 +432,94 @@
   display: block;
   margin: 10px 0;
   color: #7cc576;
+}
+
+.ready {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 8%;
+  background-color: #7cc576;
+}
+
+.ready__h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+}
+
+.ready__btn {
+  color: white;
+  background-color: transparent;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.company {
+  margin: 0 auto;
+  padding: 30px 8%;
+}
+
+.company__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company__img {
+  margin: 20px;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 30px 8%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__items {
+  margin: 20px 0;
+}
+
+.contact__items-h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact__items-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20px;
+}
+
+.contact__items-paragrap {
+  margin-left: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.contact {
+    @include container;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    &__items {
+        margin: 20px 0;
+    }
+
+    &__items-h3 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+
+    &__items-div {
+        display: flex;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    &__items-paragrap {
+        margin-left: 20px;
+        align-self: center;
+    }
+}

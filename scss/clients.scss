@@ -15,7 +15,7 @@
     &__image-container {
         width: 200px;
         height: 200px;
-        background-image: url('/img/rydzyk.jpg');
+        background-image: url('../img/rydzyk.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
@@ -24,8 +24,7 @@
     }
 
     &__image-container--2 {
-        background-image: url('/img/2pac.png');
-
+        background-image: url('../img/2pac.png');
     }
 
 }
