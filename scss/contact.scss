@@ -25,4 +25,17 @@
         margin-left: 20px;
         align-self: center;
     }
+
+    &__items-ico--large {
+        margin-right: 9px;
+    }
+
+    &__items-paragrap--author {
+        margin: 5px 20px;
+        font-weight: 900;
+    }
+
+    &__items-paragrap--time {
+        font-size: 14px
+    }
 }
