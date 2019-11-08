@@ -34,6 +34,17 @@
 
 @media (min-width:768px) {
     .professional {
+        display: flex;
+        align-items: center;
+
+        &__container {
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .professional {
         @include padding;
         display: flex;
         flex-direction: row;
@@ -48,6 +59,11 @@
         &__container {
             flex: 3 0px;
             margin: 50px 10px;
+
+            &-ico {
+                font-size: 50px;
+                margin: 50px 20px;
+            }
         }
     }
 }

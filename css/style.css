@@ -133,8 +133,8 @@
 
 @media (min-width: 768px) {
   .header {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -258,8 +258,22 @@
 
 @media (min-width: 768px) {
   .professional {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .professional__container {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .professional {
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,20 +296,19 @@
             flex: 3 0px;
     margin: 50px 10px;
   }
+  .professional__container-ico {
+    font-size: 50px;
+    margin: 50px 20px;
+  }
 }
 
 .relax {
-  padding: 20px 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url("../img/cliff.png") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/cliff.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #e4e4e4;
   color: white;
 }
 
 .relax__gear {
   display: none;
-  background-color: gray;
 }
 
 .just-relax {
@@ -312,6 +325,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url("../img/cliff.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/cliff.png") no-repeat;
+  background-size: cover;
 }
 
 .just-relax__h2 {
@@ -347,6 +364,47 @@
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
   margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .relax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .relax__gear {
+    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+  }
+  .relax__img {
+    height: 75%;
+    display: block;
+    position: absolute;
+    right: -150px;
+  }
+  .just-relax {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .just-relax__paragraf {
+    width: 75%;
+  }
 }
 
 .project {
