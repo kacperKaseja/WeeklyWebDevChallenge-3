@@ -131,8 +131,41 @@
           transform: translateY(12px) rotate(45deg);
 }
 
+@media (min-width: 768px) {
+  .header {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation__list-anchor {
+    font-size: 1.2rem;
+  }
+  .navigation__hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation__list-anchor {
+    margin-left: 20px;
+  }
+}
+
 .solution {
-  height: 80vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/home-bg.png") no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/home-bg.png") no-repeat;
   background-size: cover;
@@ -164,6 +197,21 @@
   text-shadow: 1px 1px 3px black;
   text-transform: uppercase;
   margin: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .solution {
+    padding: 10% 20%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .solution__h1 {
+    font-size: 50px;
+  }
 }
 
 .professional {
@@ -208,9 +256,36 @@
   color: gray;
 }
 
+@media (min-width: 768px) {
+  .professional {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .professional__h2, .professional__paragrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    width: 100%;
+  }
+  .professional__container {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 0px;
+            flex: 3 0px;
+    margin: 50px 10px;
+  }
+}
+
 .relax {
   padding: 20px 30px;
-  height: 80vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url("../img/cliff.png") no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/cliff.png") no-repeat;
   background-position: center;
@@ -546,6 +621,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__image-wrapper {
@@ -555,5 +633,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 20px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,23 +18,14 @@ $hamburger-distance:12px;
     align-items: center;
     position: relative;
 
-
     &__img {
         margin: 20px 20px;
         align-self: flex-start;
-
     }
-
-    // &__navigation {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
 }
 
 .navigation__list {
     display: none;
-    // display: flex;
-
 
     &-item {
         list-style: none;
@@ -49,7 +40,6 @@ $hamburger-distance:12px;
         font-size: 1.5rem;
         font-weight: 500;
     }
-
 }
 
 .navigation__list--active {
@@ -71,7 +61,6 @@ $hamburger-distance:12px;
     &-box {
         width: 40px;
         height: 40px;
-
         display: inline-block;
         position: relative;
 
@@ -109,6 +98,34 @@ $hamburger-distance:12px;
         .hamburger--active &-inner::after {
             transform: translateY($hamburger-distance) rotate(45deg);
         }
-
     }
+}
+
+@media (min-width:768px) {
+    .header {
+        @include padding;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navigation__list {
+        display: flex;
+
+        &-anchor {
+            font-size: 1.2rem;
+        }
+    }
+
+    .navigation__hamburger {
+        display: none;
+    }
+
+}
+
+@media(min-width:1024px) {
+    .navigation__list-anchor {
+        margin-left: 20px;
+    }
+
 }

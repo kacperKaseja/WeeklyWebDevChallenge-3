@@ -30,5 +30,24 @@
             color: gray;
         }
     }
+}
 
+@media (min-width:768px) {
+    .professional {
+        @include padding;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__h2,
+        &__paragrap {
+            flex: 1 100%;
+            width: 100%;
+        }
+
+        &__container {
+            flex: 3 0px;
+            margin: 50px 10px;
+        }
+    }
 }
