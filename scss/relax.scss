@@ -1,17 +1,10 @@
 .relax {
-    padding: 20px 30px;
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../img/cliff.png') no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(228, 228, 228);
     color: white;
 
     &__gear {
         display: none;
-        background-color: gray;
     }
-
-
 }
 
 .just-relax {
@@ -19,10 +12,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 20px 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../img/cliff.png') no-repeat;
+    background-size: cover;
 
     &__h2 {
         @include headings2;
-
 
     }
 
@@ -45,5 +40,39 @@
 
     &__button {
         @include grennBtn;
+    }
+}
+
+@media(min-width:768px) {
+    .relax {
+        display: flex;
+        padding: 0;
+
+        &__gear {
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+        }
+
+        &__img {
+            height: 75%;
+            display: block;
+            position: absolute;
+            right: -150px;
+            // transform: translateX(20);
+        }
+    }
+
+    .just-relax {
+        flex: 2;
+
+        &__paragraf {
+            width: 75%;
+        }
     }
 }

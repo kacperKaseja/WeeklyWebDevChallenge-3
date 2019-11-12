@@ -1,7 +1,6 @@
 .project {
     @include container;
 
-
     &__h2 {
         @include headings2;
 
@@ -51,4 +50,15 @@
 
 .project__wrapper-paragrap {
     color: gray;
+}
+
+@media (min-width:768px) {
+    .project {
+        text-align: center;
+    }
+
+    .wrapper__div {
+        justify-content: center;
+        margin: 50px;
+    }
 }

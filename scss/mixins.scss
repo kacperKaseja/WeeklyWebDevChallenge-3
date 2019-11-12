@@ -21,3 +21,8 @@
     margin: 0 auto;
     padding: 30px 8%;
 }
+
+@mixin padding {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}

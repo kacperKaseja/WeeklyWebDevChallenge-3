@@ -1,0 +1,16 @@
+.footer {
+    @include container;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    &__image-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        align-self: stretch;
+    }
+
+
+
+}

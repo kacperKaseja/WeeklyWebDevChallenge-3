@@ -120,4 +120,14 @@
   -webkit-transform: translateY(12px) rotate(45deg);
           transform: translateY(12px) rotate(45deg);
 }
+
+@media (min-width: 768px) {
+  .header {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  .navigation__hamburger {
+    display: none;
+  }
+}
 /*# sourceMappingURL=header.css.map */
