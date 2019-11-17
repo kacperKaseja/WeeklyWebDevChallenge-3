@@ -39,3 +39,19 @@
         font-size: 14px
     }
 }
+
+@media(min-width:1024px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__items {
+            width: 33%;
+        }
+    }
+
+    .contact__items-paragrap--tweet:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

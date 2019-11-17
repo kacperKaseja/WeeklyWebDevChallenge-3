@@ -59,12 +59,18 @@
             position: relative;
         }
 
+
         &__img {
             height: 75%;
             display: block;
             position: absolute;
             right: -150px;
             // transform: translateX(20);
+            transition: transform 1.5s;
+        }
+
+        &__img:hover {
+            transform: rotate(90deg);
         }
     }
 

@@ -14,14 +14,14 @@
 
 <body>
     <header class="header">
-        <img src="img/logo.png" alt="" class="header__img">
+        <img src=" img/logo.png" alt="" class="header__img">
         <nav class="header__navigation">
             <ul class="navigation__list">
-                <li class="navigation__list-item"><a class="navigation__list-anchor" href="">Home</a></li>
-                <li class="navigation__list-item"><a class="navigation__list-anchor" href="">About</a></li>
-                <li class="navigation__list-item"><a class="navigation__list-anchor" href="">Blog</a></li>
-                <li class="navigation__list-item"><a class="navigation__list-anchor" href="">Portfolio</a></li>
-                <li class="navigation__list-item"><a class="navigation__list-anchor" href="">Contact</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-anchor" href="#solution">Home</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-anchor" href="#professional">About</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-anchor" href="#relax">Blog</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-anchor" href="#project">Portfolio</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-anchor" href="#contact">Contact</a></li>
             </ul>
             <button class="navigation__hamburger">
                 <span class="navigation__hamburger-box">
@@ -31,12 +31,12 @@
             </button>
         </nav>
     </header>
-    <section class="solution">
+    <section class="solution" id="solution">
         <h1 class="solution__h1">Creative Digital Solution</h1>
         <p class="solution__paragrap">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
         <button class="solution__button button">View Portfolio</button>
     </section>
-    <section class="professional">
+    <section class="professional" id="professional">
         <h2 class="professional__h2">Profesional services</h2>
         <p class="professional__paragrap">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
         <div class="professional__container">
@@ -59,7 +59,7 @@
                 inventore molestiae magnam? Possimus reiciendis asperiores tempora quia !</p>
         </div>
     </section>
-    <section class="relax">
+    <section class="relax" id="relax">
         <div class="relax__gear">
             <img src="img/gear.png" class="relax__img" alt="">
         </div>
@@ -75,7 +75,7 @@
             <button class="just-relax__button">Lear Mores</button>
         </div>
     </section>
-    <section class="project">
+    <section class="project" id="project">
         <h2 class="project__h2">Lates project</h2>
         <p class="project__paragrap">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div class="project__wrapper">
@@ -122,7 +122,7 @@
                 <p class="container__paragrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
                     expedita in officiis praesentium excepturi, quo, perferendis obcaecati sunt. Aliquid?</p>
             </div>
-            <span class="container__line"></span>
+            <span class="container__line conteiner__line--second"></span>
             <div class="container">
                 <img class="container__img" src="img/star-icon.png" alt="" srcset="">
                 <h3 class="container__h3">Deliver Excellence</h3>
@@ -135,24 +135,30 @@
         <h2 class="clients__h2">Our Awesome Clients</h2>
         <p class="clients__paragrap">Lorem ipsum dolor sit amet.</p>
         <div class="clients__container">
-            <div class="clients__image-container">
-                <!-- <img src="img/rydzyk.jpg" alt="" class="clients__img"> -->
-            </div>
+            <div class="client_person">
+                <div class="clients__image-container">
+                    <!-- <img src="img/rydzyk.jpg" alt="" class="clients__img"> -->
+                </div>
 
-            <div class="container__wrapper">
-                <p class="container__paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                    veniam quos eos iste quae dolore nam itaque eveniet. Ipsam, error!"</p>
-                <span class="container__span">Tadeusz Rydzyk - Ojciec Dyrektor</span>
+                <div class="container__wrapper">
+                    <p class="container__paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem
+                        veniam quos eos iste quae dolore nam itaque eveniet. Ipsam, error!"</p>
+                    <span class="container__span">Tadeusz Rydzyk - Ojciec Dyrektor</span>
+                </div>
             </div>
+            <div class="client_person client_person--second">
 
-            <div class="clients__image-container clients__image-container--2">
-                <!-- <img src="img/rydzyk.jpg" alt="" class="clients__img"> -->
-            </div>
+                <div class="clients__image-container clients__image-container--2">
+                    <!-- <img src="img/rydzyk.jpg" alt="" class="clients__img"> -->
+                </div>
 
-            <div class="container__wrapper">
-                <p class="container__paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                    veniam quos eos iste quae dolore nam itaque eveniet. Ipsam, error!"</p>
-                <span class="container__span">2Pac - Gangsta Rapper</span>
+                <div class="container__wrapper container__wrapper--2pac">
+                    <p class="container__paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem
+                        veniam quos eos iste quae dolore nam itaque eveniet. Ipsam, error!"</p>
+                    <span class="container__span">2Pac - Gangsta Rapper</span>
+                </div>
             </div>
         </div>
     </section>
@@ -168,7 +174,7 @@
             <img class="company__img" src="img/microlancer-logo.png" alt="">
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__items">
             <h3 class="contact__items-h3">Contact Us</h3>
             <div class="contact__items-div">
@@ -211,8 +217,9 @@
             <h3 class="contact__items-h3">Latest Tweets</h3>
             <div class="contact__items-div">
                 <img src="img/twitter-icon.png" alt="" class="contact__items-ico">
-                <div class="contact__paragrap-wrapper">
-                    <p class="contact__items-paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="contact__paragrap-wrapper ">
+                    <p class="contact__items-paragrap contact__items-paragrap--tweet">"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
                         Voluptate,
                         maxime." </p>
                     <p class="contact__items-paragrap contact__items-paragrap--author">#famousequotes</p>
@@ -222,7 +229,8 @@
             <div class="contact__items-div">
                 <img src="img/twitter-icon.png" alt="" class="contact__items-ico">
                 <div class="contact__paragrap-wrapper">
-                    <p class="contact__items-paragrap">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="contact__items-paragrap contact__items-paragrap--tweet">"Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
                         Voluptate,
                         maxime." </p>
                     <p class="contact__items-paragrap contact__items-paragrap--author">#famousequotes</p>

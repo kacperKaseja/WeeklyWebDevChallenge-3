@@ -16,5 +16,16 @@
         text-transform: uppercase;
         border: 2px solid white;
         border-radius: 10px;
+        transition: transform .5s;
+    }
+}
+
+@media(min-width:1024px) {
+
+    .ready__btn:hover {
+        color: green;
+        background-color: white;
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }

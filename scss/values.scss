@@ -3,6 +3,7 @@
     background-color: rgb(250, 250, 250);
     text-align: center;
 
+
     &__h2 {
         @include headings2;
     }
@@ -35,4 +36,23 @@
     height: 80px;
     margin: 0 auto;
     background-color: gray;
+}
+
+@media(min-width:1024px) {
+    .values__container {
+        display: flex;
+        position: relative;
+    }
+
+    .container__line {
+        position: absolute;
+        top: 5%;
+        left: 33%;
+        height: 120px;
+        transform: rotate(90deg);
+    }
+
+    .conteiner__line--second {
+        left: 66%;
+    }
 }

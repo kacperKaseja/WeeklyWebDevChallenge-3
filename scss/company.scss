@@ -10,7 +10,17 @@
 
     &__img {
         margin: 20px;
+        transition: transform .5s;
     }
 
+}
 
+@media(min-width:1024px) {
+    .company__wrapper {
+        flex-direction: row;
+    }
+
+    .company__img:hover {
+        transform: scale(1.2);
+    }
 }

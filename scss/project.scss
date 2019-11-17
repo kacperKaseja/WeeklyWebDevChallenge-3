@@ -15,6 +15,7 @@
 .wrapper__h3 {
     font-size: 25px;
     margin: 10px 0;
+
 }
 
 .wrapper__paragrap {
@@ -59,6 +60,51 @@
 
     .wrapper__div {
         justify-content: center;
-        margin: 50px;
+        margin: 20px;
+    }
+}
+
+@media(min-width:1024px) {
+    .project {
+        background: url('../img/ipad.png');
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: 600px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+
+        &__h2 {
+            align-self: center;
+        }
+
+        &__paragrap {
+            align-self: center;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: center;
+            width: 400px;
+        }
+
+    }
+
+    .wrapper__paragrap {
+        text-align: left;
+    }
+
+    .wrapper__div {
+        margin: 10px;
+        margin-left: 0;
+    }
+
+    .wrapper__paragrap--inner {
+        text-align: left;
     }
 }

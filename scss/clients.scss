@@ -47,11 +47,48 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid rgb(240, 240, 240);
-
 }
 
 .container__span {
     display: block;
     margin: 10px 0;
     color: $green;
+}
+
+@media(min-width:1024px) {
+    .client_person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+
+    }
+
+    .container__wrapper {
+        width: 500px;
+        height: 120px;
+        margin: 0 30px;
+    }
+
+    .clients__image-container {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+
+    .client_person--second {
+        flex-direction: row-reverse;
+    }
+
+    .container__wrapper::after {
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%) rotate(-90deg);
+    }
+
+    .container__wrapper--2pac::after {
+        // background-color: aquamarine;
+        top: 50%;
+        left: calc(100% - 10px);
+        transform: translateY(-50%) rotate(90deg);
+    }
 }
